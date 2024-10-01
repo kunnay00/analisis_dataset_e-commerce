@@ -46,4 +46,4 @@ wheel==0.44.0
 streamlit
 matplotlib
 seaborn
-matplotlib.pyplot
+matplotlib-inline
