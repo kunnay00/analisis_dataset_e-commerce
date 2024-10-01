@@ -7,7 +7,7 @@ from datetime import datetime
 
 sns.set(style='darkgrid')
 
-main_data_df = pd.read_csv("main_data.csv", chunksize=10000)
+main_data_df = pd.read_csv("https://drive.google.com/uc?export=download&id=1sNBUFhaFtuFPAb82x92uWYKRdbi_hbqn", chunksize=10000)
 main_data_df = pd.concat(main_data_df)
 main_data_df['order_delivered_customer_date'] = pd.to_datetime(main_data_df['order_delivered_customer_date'], errors='coerce')
 
